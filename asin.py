@@ -23,7 +23,7 @@ def get_asin(url):
         return list(set(asin_list))
 
 def append_csv(asin_list):
-    with open('products.csv','a+', newline='') as output:
+    with open('asin.csv','a+', newline='') as output:
         writer = csv.writer(output)
         writer.writerow(asin_list)
 
